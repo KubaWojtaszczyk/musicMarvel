@@ -1,0 +1,186 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Palanquin', sans-serif;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #root {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  //Home component
+
+  .homeDiv {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle, #FFBC67, #DA727E, #AC6C82, #685C79, #455C7B);
+    position: fixed;
+  }
+  .squirtleDiv{
+    position: fixed;
+    margin: 20px 20px;
+    text-align:center;
+    height: 200px;
+    width: 50%;
+    background-color: rgba(218, 114, 126, 0.1);
+    p {
+      font-size: 20px;
+      background-color: rgba(218, 114, 126, 0.1);
+    }
+    .redirectButton {
+      text-transform: uppercase;
+      outline: none;
+      font-weight: bold;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: transparent
+    }
+  }
+  .squirtle {
+    margin-top: 150px;
+    height: 100%;
+    padding-left: 100px;
+    cursor: grab;
+    transition: transform 1s;
+  }
+  .squirtle:hover {
+    transform: scale(0.5);
+  }
+
+  //about component
+  .superheroDiv {
+    background-image: linear-gradient(to right, #FFBC67, #DA727E, #AC6C82, #685C79, #455C7B);
+    margin: 0 auto;
+    padding-right: 0;
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      img {
+        flex: 0 1 auto;
+        height: 100%;
+        transform: scaleX(-1);
+      }
+      div {
+        flex: 0 2 auto;
+        text-align: center;
+        font-size: 20px;
+      }
+    }
+  }
+  .rowOne {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: linear-gradient(to right, #FFBC67, #DA727E, #AC6C82, #685C79, #455C7B);
+  }
+  .zoom {
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+    .zoom:hover {
+      transform: scale(1.5);
+    }
+
+  //Music component
+
+  .musicButton {
+    margin-left: 10px;
+    color: #fff !important;
+    text-transform: uppercase;
+    background-image: linear-gradient(#FFBC67, #DA727E);
+    padding: 15px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    outline: none !important;
+  }
+  .musicButton:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+    outline: none;
+  }
+
+
+  //info component
+
+  .poofName {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #455C7B;
+  }
+  .poofButton {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff !important;
+    text-transform: uppercase;
+    background-image: linear-gradient(#FFBC67, #DA727E);
+    padding: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    border: none;
+    outline: none !important;
+  }
+  .poofButton:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+  }
+
+  //more component
+
+  .oldClass {
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .oldClass:hover {
+    transform: scale(1.5);
+  }
+
+  .newClass {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    transition: all 2s ease-in-out;
+    transform: rotate(360deg);
+  }
+
+
+  //error component
+
+  .errorDiv {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle, #FFBC67, #DA727E, #AC6C82, #685C79, #455C7B);
+    padding-top: 200px;
+  }
+
+  i {
+    border: solid #455C7B;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
